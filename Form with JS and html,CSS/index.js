@@ -9,4 +9,14 @@ form.addEventListener("submit", formhandler);
 
 function formhandler(e) {
     e.preventDefault();
-    console.log("submit");
+    const userInfo ={
+      name: name.value,
+      email: email.value,
+      password: password.value
+    };
+    console.log(userInfo);
+    name.value = "";
+    email.value = "";
+    password.value = "";
+ 
+}
